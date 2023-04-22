@@ -5,15 +5,15 @@
 #include<valarray>
 using namespace std;
 string numOfTwins(string num){
-int counter=0;
-int n=stoi(num);
-while(n){
-    if(!(n%16 ^6))
-    counter++;
-    n=n>>1;
-}
+    int counter=0;
+    int n=stoi(num);
+    while(n){
+        if(!(n%16 ^6))
+        counter++;
+        n=n>>1;
+    }
 
-return counter?to_string(counter):"NULL";
+    return counter?to_string(counter):"NULL";
 }
 vector<int> bin(int num){
     vector <int> binNum;
